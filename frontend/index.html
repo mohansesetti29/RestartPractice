@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Manager</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <header>
+            <h1>Task Manager</h1>
+            <p>Frontend ↔ Python Backend Test</p>
+        </header>
+
+        <section class="task-form">
+            <input
+                type="text"
+                id="taskInput"
+                placeholder="Enter a task..."
+            >
+
+            <button onclick="addTask()">
+                Add Task
+            </button>
+        </section>
+
+        <section class="status">
+            <span id="serverStatus">Checking server...</span>
+        </section>
+
+        <section>
+            <h2>Tasks</h2>
+
+            <div id="taskList">
+                <p class="empty">No tasks yet.</p>
+            </div>
+        </section>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
